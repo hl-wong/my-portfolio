@@ -12,113 +12,172 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- ===== MATERIAL ICONS ===== -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- ===== FONTAWESOME ICONS ===== -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <!-- ===== HEADER ===== -->
+    <header>
         <nav class="nav">
             <div class="nav__wrapper">
-                <img src="assets/images/logo-dark.png" alt="logo" draggable="false">
-                <div></div>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#journey">My Journey</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <img src="assets/images/logo-dark.png" alt="logo" draggable="false" class="nav__logo">
+                <div class="nav__divider"></div>
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">About Me</a></li>
+                    <li><a href="#journey" class="nav__link">My Journey</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-            <span class="material-icons">segment</span>
+            <span class="material-icons nav__menu-icon">segment</span>
         </nav>
     </header>
 
+    <!-- ===== MAIN CONTENT OF THE PAGE ===== -->
     <main>
         <!-- ===== HERO ===== -->
         <section id="hero" class="hero">
-            <div class="hero__wrapper">
-                <span>Hello,</span>
-                <h1>I'm <span class="bold">HL Wong</span></h1>
-                <h2>Software Engineer</h2>
+            <div>
+                <span class="hero__greeting">Hello,</span>
+                <h1 class="hero__main">I'm <span class="text-highlight">HL Wong</span></h1>
+                <h2 class="hero__sub">Software Engineer</h2>
             </div>
 
-            <p>The beginning of my journey as a <span class="bold">Developer</span> — always learning, always growing.</p>
+            <p class="hero__desc">The beginning of my journey as a <span class="text-highlight">Developer</span> — always learning, always growing.</p>
 
-            <button class="hero__btn">View Projects<span class="material-icons">arrow_forward</span></button>
+            <button class="btn btn-primary hero__btn">View Projects <span class="material-icons">arrow_forward</span></button>
         </section>
 
-        <!-- ===== ABOUT ===== -->
-        <section id="about" class="about">
-            <h2></h2>
-        </section>
+        <!-- ===== ABOUT ME ===== -->
+        <section id="about"></section>
 
-        <!-- ===== JOURNEY ===== -->
-        <section id="journey" class="journey">
-            <h2></h2>
-        </section>
+        <!-- ===== MY JOURNEY ===== -->
+        <section id="journey"></section>
 
         <!-- ===== PROJECTS ===== -->
-        <section id="projects" class="projects">
-            <h2></h2>
-        </section>
+        <section id="projects"></section>
 
         <!-- ===== SKILLS ===== -->
-        <section id="skills" class="skills">
-            <div class="skills__header">
-                <h2>Skills</h2>
-                <p>Technologies I've worked with and continue to grow in.</p>
+        <section id="skills" class="section">
+            <div>
+                <h2 class="section__title">Skills</h2>
+                <p class="section__desc">Technologies I've worked with and continue to grow in.</p>
             </div>
 
             <div class="skills__grid">
-                <div class="skills__grid__card">
-                    <img src="assets/images/html-5.png" alt="html5" />
-                    <p>HTML5</p>
+                <div class="skills__card">
+                    <img src="assets/images/html-5.png" alt="html5" class="skills__icon"/>
+                    <p class="skills__text">HTML5</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/css-3.png" alt="css3" />
-                    <p>CSS3</p>
+                <div class="skills__card">
+                    <img src="assets/images/css-3.png" alt="css3" class="skills__icon"/>
+                    <p class="skills__text">CSS3</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/javascript.png" alt="js" />
-                    <p>JavaScript</p>
+                <div class="skills__card">
+                    <img src="assets/images/javascript.png" alt="js" class="skills__icon"/>
+                    <p class="skills__text">JavaScript</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/java.png" alt="java" />
-                    <p>Java</p>
+                <div class="skills__card">
+                    <img src="assets/images/java.png" alt="java" class="skills__icon"/>
+                    <p class="skills__text">Java</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/react.png" alt="react" />
-                    <p>React</p>
+                <div class="skills__card">
+                    <img src="assets/images/react.png" alt="react" class="skills__icon"/>
+                    <p class="skills__text">React</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/vscode.png" alt="vscode" />
-                    <p>VS Code</p>
+                <div class="skills__card">
+                    <img src="assets/images/vscode.png" alt="vscode" class="skills__icon"/>
+                    <p class="skills__text">VS Code</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/github.png" alt="github" />
-                    <p>Git & GitHub</p>
+                <div class="skills__card">
+                    <img src="assets/images/github.png" alt="github" class="skills__icon"/>
+                    <p class="skills__text">Git & GitHub</p>
                 </div>
 
-                <div class="skills__grid__card">
-                    <img src="assets/images/android-studio.png" alt="android-studio" />
-                    <p>Android Studio</p>
+                <div class="skills__card">
+                    <img src="assets/images/android-studio.png" alt="android-studio" class="skills__icon"/>
+                    <p class="skills__text">Android Studio</p>
                 </div>
             </div>
         </section>
 
         <!-- ===== CONTACT ===== -->
-        <section id="contact" class="contact">
-            <h2></h2>
+        <section id="contact" class="section contact">
+            <div class="contact__left">
+                <div>
+                    <h2 class="section__title contact__title">Contact Me</h2>
+                    <p class="section__desc contact__desc">Got a question or simply want to connect? Drop me a message anytime.</p>
+                </div>
+                
+                <ul class="contact__social-list">
+                    <li class="contact__social-item">
+                        <div class="contact__social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="contact__social-text">Email</p>
+                            <a href="mailto:hlwongwf@gmail.com" class="contact__social-link">hlwongwf@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact__social-item">
+                        <div class="contact__social-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <p class="contact__social-text">GitHub</p>
+                            <a href="https://github.com/hl-wong" class="contact__social-link">https://github.com/hl-wong</a>
+                        </div>
+                    </li>
+                    <li class="contact__social-item">
+                        <div class="contact__social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <p class="contact__social-text">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/hl-wong/" class="contact__social-link">https://www.linkedin.com/in/hl-wong/</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact__right">
+                <form class="contact__form">
+                    <div class="contact__form-group">
+                        <label for="name" class="contact__form-label">Your Name</label>
+                        <input type="text" id="name" class="contact__form-input" placeholder="Your Name">
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="email" class="contact__form-label">Your Email</label>
+                        <input type="email" id="email" class="contact__form-input" placeholder="Your Email">
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="subject" class="contact__form-label">Subject</label>
+                        <input type="text" id="subject" class="contact__form-input" placeholder="Subject">
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="message" class="contact__form-label">Message</label>
+                        <textarea name="message" id="message" class="contact__form-textarea" placeholder="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact__form-submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
-    
-    <!-- ===== JAVASCRIPT ===== -->
-     <script src="assets/js/script.js"></script>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p class="footer__copyright">© 2025 HL Wong. All rights reserved.</p>
+    </footer>
 </body>
 </html>
