@@ -32,8 +32,8 @@ body {
     align-items: center;
     height: 70px;
     padding-inline: 1rem;
-    position: fixed;
-    width: 100%;
+    /* position: fixed;
+    width: 100%; */
 }
 
 .nav__wrapper {
@@ -76,7 +76,8 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-    height: 100vh;
+    height: calc(100vh - 70px);
+    /* height: 100vh; */
     padding-inline: 1rem;
     display: flex;
     flex-direction: column;
@@ -144,7 +145,49 @@ body {
 
 
 /* ===== SKILLS ===== */
-.skills {}
+.skills { padding: 2.5rem 1rem; }
+
+.skills__header { text-align: center; }
+
+.skills__header > h2 { color: var(--text); }
+
+.skills__header > p { 
+    margin-top: 0.5rem; 
+    color: var(--text); 
+}
+
+.skills__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.skills__grid__card {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: var(--primary);
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.15);
+}
+
+.skills__grid__card:hover { background-color: var(--secondary); }
+
+.skills__grid__card > img {
+    height: auto;
+    width: 100%;
+    display: block;
+    max-width: 40px;
+}
+
+.skills__grid__card > p { 
+    color: var(--white);
+    text-align: center;
+    font-size: 0.875rem;
+}
 
 
 /* ===== CONTACT ===== */
@@ -155,16 +198,27 @@ body {
 @media screen and (min-width: 768px) {
     .nav { padding-inline: 3rem; }
 
+    /* ===== HERO ===== */
     .hero { padding-inline: 3rem; }
 
     .hero > p { max-width: 80%; }
 
     .hero__btn { width: fit-content; }
+
+    /* ===== SKILLS ===== */
+    .skills { padding: 2.5rem 3rem; }
+
+    .skills__grid { 
+        grid-template-columns: repeat(4, 160px); 
+        justify-content: center;
+        gap: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .nav { padding-inline: 5rem; }
 
+    /* ===== HERO ===== */
     .hero { padding-inline: 5rem; }
     
     .hero > p { max-width: 500px; }
@@ -182,5 +236,6 @@ body {
         gap: 2rem;
     }
 
+    /* ===== HERO ===== */
     .hero { padding-inline: 7.5rem; }
 }
