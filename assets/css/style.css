@@ -32,8 +32,8 @@ body {
     align-items: center;
     height: 70px;
     padding-inline: 1rem;
-    /* position: fixed;
-    width: 100%; */
+    position: fixed;
+    width: 100%;
 }
 
 .nav__wrapper {
@@ -76,8 +76,7 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-    height: calc(100vh - 70px);
-    /* height: 100vh; */
+    height: 100vh;
     padding-inline: 1rem;
     display: flex;
     flex-direction: column;
@@ -87,7 +86,7 @@ body {
 .hero__wrapper {}
 
 .hero__wrapper > span { 
-    font-size: clamp(1.375rem, 3.5vw, 3rem);
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
     color: var(--text); 
 }
 
@@ -97,7 +96,7 @@ body {
 }
 
 .hero__wrapper > h2 { 
-    font-size: clamp(1.375rem, 3.5vw, 3rem);
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
     color: var(--text); 
 }
 
