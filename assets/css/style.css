@@ -126,7 +126,7 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-    height: calc(100dvh - 70px);
+    height: calc(100vh - 70px);
     padding-inline: 1rem;
     display: flex;
     flex-direction: column;
