@@ -41,6 +41,7 @@ body {
     font-size: 1rem;
     font-weight: var(--font-semibold);
     padding: 0.5rem 1.5rem;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -116,13 +117,27 @@ body {
     display: none;
 }
 
+.nav__item { position: relative; }
+
 .nav__link {
     text-decoration: none;
     color: var(--text);
     font-weight: var(--font-medium);
 }
 
-.nav__link:hover { color: var(--secondary); }
+.nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+.nav__link:hover::after { width: 100%; }
 
 /* ===== HERO ===== */
 .hero {
@@ -163,7 +178,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    text-decoration: none;
 }
 
 /* ===== JOURNEY ===== */
@@ -436,20 +450,28 @@ body {
 }
 
 /* ===== MEDIA QUERIES ===== */
-@media screen and (min-width: 768px) {
-    /* ===== GENERAL ===== */
-    .section { padding: 2.5rem 3rem; }
+@media screen and (min-width: 480px) {
+    .section,
+    .nav,
+    .hero { padding-inline: 2rem; }
 
     .section__title { font-size: 2rem; }
-    
-    .btn { width: fit-content; }
 
-    /* ===== HEADER ===== */
-    .nav { padding-inline: 3rem; }
+    /* ===== JOURNEY ===== */
+    .journey__item { gap: 2rem; }
 
-    /* ===== HERO ===== */
+    /* ===== SKILLS ===== */
+    .skills__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media screen and (min-width: 768px) {
+    .section,
+    .nav,
     .hero { padding-inline: 3rem; }
 
+    .btn { width: fit-content; }
+
+    /* ===== HERO ===== */
     .hero__desc { max-width: 80%; }
 
     /* ===== JOURNEY ===== */
@@ -467,7 +489,6 @@ body {
     }
     
     .journey__item { 
-        gap: 2rem; 
         align-self: flex-end;
         max-width: 21.469rem;
         width: 100%;
@@ -483,13 +504,13 @@ body {
         flex-direction: row-reverse;
         align-self: flex-start;
     }
-    
+
     /* ===== PROJECTS ===== */
-    .projects__list { margin-top: 3rem; }
+    .projects__list { margin-top: 4rem; }
 
     .projects__project {
         flex-direction: row;
-        gap: 3rem;
+        gap: 4rem;
     }
 
     .projects__image {
@@ -500,10 +521,8 @@ body {
     .project--reverse { flex-direction: row-reverse; }
 
     /* ===== SKILLS ===== */
-    .skills__grid {
-        grid-template-columns: repeat(4, 160px);
-        justify-content: center;
-        gap: 1rem;
+    .skills__grid { 
+        grid-template-columns: repeat(4, 1fr); 
         margin-top: 3rem;
     }
 
@@ -512,15 +531,21 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    /* ===== GENERAL ===== */
-    .section { padding: 2.5rem 5rem; }
-
-    /* ===== HEADER ===== */
-    .nav { padding-inline: 5rem; }
-
-    /* ===== HERO ===== */
+    .section, 
+    .nav,
     .hero { padding-inline: 5rem; }
 
+    /* ===== HEADER ===== */
+    .nav__divider { display: block; }
+
+    .nav__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav > span { display: none; }
+
+    /* ===== HERO ===== */
     .hero__desc { max-width: 31.25rem; }
 
     /* ===== JOURNEY ===== */
@@ -540,7 +565,11 @@ body {
     .projects__image, .projects__content { flex: 1 }
 
     /* ===== SKILLS ===== */
-    .skills__grid { margin-top: 4rem; }
+    .skills__grid {
+        grid-template-columns: repeat(4, 160px);
+        justify-content: center;
+        gap: 1rem;
+    }
 
     /* ===== CONTACT ===== */
     .contact { 
@@ -556,22 +585,8 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-    /* ===== GENERAL ===== */
-    .section { padding: 5rem 7.5rem; }
-
-    /* ===== HEADER ===== */
-    .nav { padding-inline: 7.5rem; }
-
-    .nav__divider { display: block; }
-
-    .nav__list {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .nav > span { display: none; }
-
-    /* ===== HERO ===== */
+    .section,
+    .nav,
     .hero { padding-inline: 7.5rem; }
 
     /* ===== JOURNEY ===== */
@@ -590,4 +605,3 @@ body {
     /* ===== CONTACT ===== */
     .contact { gap: 5rem; }
 }
-
