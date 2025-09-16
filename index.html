@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HL Wong | Software Engineer</title>
     <!-- ===== FAVICON ===== -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- ===== GOOGLE FONTS ===== -->
@@ -30,12 +30,12 @@
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-            <span class="material-icons">segment</span>
+            <button class="nav__toggle"><span class="material-icons">segment</span></button>
         </nav>
     </header>
 
-    <!-- ===== MAIN CONTENT OF THE PAGE ===== -->
-    <main>
+    <!-- ===== MAIN CONTENT ===== -->
+     <main>
         <!-- ===== HERO ===== -->
         <section id="hero" class="hero">
             <div>
@@ -50,180 +50,195 @@
         </section>
 
         <!-- ===== ABOUT ME ===== -->
-        <section id="about"></section>
+        <section id="about" class="section about">
+            <div class="about__left">
+                <img src="assets/images/about.png" alt="about" draggable="false" loading="lazy" class="about__img">
+            </div>
+            <div class="about__right">
+                <h2 class="section__title about__title">About Me</h2>
+                <p class="section__desc about__desc">I’m a recent Software Engineering graduate whose journey as a developer began with projects such as a cleaning service mobile app and my own portfolio. Through these, I gained practical experience in both front-end and back-end development, where I not only coded but also designed the user interface for my projects.</p>
+                <p class="section__desc about__desc">I will continue to learn new technologies, improve my skills, and apply them to real-world projects as I advance in my career.</p>
+                <a download target="_blank" class="btn btn-primary about__btn">View Resume</a>
+            </div>
+        </section>
 
-        <!-- ===== MY JOURNEY ===== -->
+        <!-- ===== JOURNEY ===== -->
         <section id="journey" class="section">
             <div>
                 <h2 class="section__title">My Journey</h2>
                 <p class="section__desc">Academic and Work Experience</p>
             </div>
 
-            <div class="journey__list">
-                <div class="journey__line"></div>
-
-                <div class="journey__item item--left">
-                    <div class="journey__indicator"></div>
-                    <div class="journey__card">
-                        <div class="journey__card-header">
-                            <img src="assets/images/cardbiz.jpg" alt="cardbiz" draggable="false" class="journey__card-icon" />
-                            <div class="journey__card-info">
-                                <h3 class="journey__card-title">Intern Trainee, Terminal Program Developer</h3>
-                                <p class="journey__card-sub">CardBiz Payment Services Sdn Bhd</p>
-                            </div>
+            <div class="journey__timeline">
+                <span class="material-icons journey__present">location_on</span>
+                
+                <div class="journey__card">
+                    <div class="journey__card-header">
+                        <img src="assets/images/cardbiz.jpg" alt="cardbiz" draggable="false" class="journey__card-icon" />
+                        <div class="journey__card-info">
+                            <h3 class="journey__card-title">Intern Trainee, Terminal Program Developer</h3>
+                            <p class="journey__card-sub">CardBiz Payment Services Sdn Bhd</p>
                         </div>
-
-                        <div class="journey__card-range">
-                            <span class="material-icons">date_range</span>
-                            <p>Jun 2025 - Aug 2025</p>
-                        </div>
-
-                        <div class="journey__card-location">
-                            <span class="material-icons">location_on</span>
-                            <p>Petaling Jaya, Selangor</p>
-                        </div>
-
-                        <ul class="tags">
-                            <li class="tag">Java</li>
-                            <li class="tag">Android Studio</li>
-                            <li class="tag">ISO 8583</li>
-                            <li class="tag">Tortoise SVN</li>
-                            <li class="tag">Notepad++</li>
-                        </ul>
                     </div>
-                </div>
 
-                <div class="journey__item">
-                    <div class="journey__indicator"></div>
-                    <div class="journey__card">
-                        <div class="journey__card-header">
-                            <img src="assets/images/segi-university.png" alt="segi" draggable="false" class="journey__card-icon" />
-                            <div class="journey__card-info">
-                                <h3 class="journey__card-title">Bachelor of Information Technology (Hons) in Software Engineering</h3>
-                                <p class="journey__card-sub">SEGi University</p>
-                            </div>
-                        </div>
-
-                        <div class="journey__card-range">
-                            <span class="material-icons">date_range</span>
-                            <p>Sep 2023 - Aug 2025</p>
-                        </div>
-
-                        <div class="journey__card-location">
-                            <span class="material-icons">location_on</span>
-                            <p>Petaling Jaya, Selangor</p>
-                        </div>
-
-                        <ul class="tags">
-                            <li class="tag">Java</li>
-                            <li class="tag">Android Studio</li>
-                            <li class="tag">Flutter</li>
-                            <li class="tag">C#</li>
-                            <li class="tag">Python</li>
-                            <li class="tag">Pandas</li>
-                            <li class="tag">SQL</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="journey__item item--left">
-                    <div class="journey__indicator"></div>
-                    <div class="journey__card">
-                        <div class="journey__card-header">
-                            <img src="assets/images/simplicitic.jpg" alt="simplicitic" draggable="false" class="journey__card-icon" />
-                            <div class="journey__card-info">
-                                <h3 class="journey__card-title">Web & Software Developer Intern</h3>
-                                <p class="journey__card-sub">Simplicitic Innovations Sdn Bhd</p>
-                            </div>
-                        </div>
-
-                        <div class="journey__card-range">
-                            <span class="material-icons">date_range</span>
-                            <p>Jul 2023 - Sep 2023</p>
-                        </div>
-
-                        <div class="journey__card-location">
-                            <span class="material-icons">location_on</span>
-                            <p>Subang Jaya, Selangor</p>
-                        </div>
-
-                        <ul class="tags">
-                            <li class="tag">React.js</li>
-                            <li class="tag">JavaScript</li>
-                            <li class="tag">TypeScript</li>
-                            <li class="tag">Redux.js</li>
-                            <li class="tag">MongoDB</li>
-                            <li class="tag">Sourcetree</li>
-                            <li class="tag">SASS</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="journey__item">
-                    <div class="journey__indicator"></div>
-                    <div class="journey__card">
-                        <div class="journey__card-header">
-                            <img src="assets/images/scsj.png" alt="segi" draggable="false" class="journey__card-icon" />
-                            <div class="journey__card-info">
-                                <h3 class="journey__card-title">Diploma in Information Technology</h3>
-                                <p class="journey__card-sub">SEGi College Subang Jaya</p>
-                            </div>
-                        </div>
-
-                        <div class="journey__card-range">
-                            <span class="material-icons">date_range</span>
-                            <p>Jan 2021 - Aug 2023</p>
-                        </div>
-
-                        <div class="journey__card-location">
-                            <span class="material-icons">location_on</span>
-                            <p>Subang Jaya, Selangor</p>
-                        </div>
-
-                        <ul class="tags">
-                            <li class="tag">SQL</li>
-                            <li class="tag">C++</li>
-                            <li class="tag">HTML</li>
-                            <li class="tag">CSS</li>
-                            <li class="tag">JavaScript</li>
-                            <li class="tag">Java</li>
-                            <li class="tag">Android Studio</li>
-                            <li class="tag">UX</li>
-                            <li class="tag">C#</li>
-                            <li class="tag">.NET</li>
-                            <li class="tag">Python</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="journey__item item--left">
-                    <div class="journey__indicator"></div>
-                    <div class="journey__card">
-                        <div class="journey__card-header">
-                            <img src="assets/images/scsj.png" alt="segi" draggable="false" class="journey__card-icon" />
-                            <div class="journey__card-info">
-                                <h3 class="journey__card-title">Certificate in Information Technology</h3>
-                                <p class="journey__card-sub">SEGi College Subang Jaya</p>
-                            </div>
-                        </div>
-
+                    <div class="journey__card-details">
                         <div class="journey__card-range">
                             <span class="material-icons">date_range</span>
                             <p>May 2019 - Dec 2020</p>
                         </div>
 
+                        <div class="journey__divider"></div>
+
                         <div class="journey__card-location">
                             <span class="material-icons">location_on</span>
                             <p>Subang Jaya, Selangor</p>
                         </div>
-
-                        <ul class="tags">
-                            <li class="tag">C++</li>
-                            <li class="tag">Java</li>
-                            <li class="tag">Adobe Flash</li>
-                            <li class="tag">Basic Network</li>
-                        </ul>
                     </div>
+
+                    <ul class="tags">
+                        <li class="tag">Java</li>
+                        <li class="tag">Android Studio</li>
+                        <li class="tag">ISO 8583</li>
+                        <li class="tag">Tortoise SVN</li>
+                        <li class="tag">Notepad++</li>
+                    </ul>
+                </div>
+
+                <div class="journey__card">
+                    <div class="journey__card-header">
+                        <img src="assets/images/segi-university.png" alt="segi" draggable="false" class="journey__card-icon" />
+                        <div class="journey__card-info">
+                            <h3 class="journey__card-title">Bachelor of Information Technology (Hons) in Software Engineering</h3>
+                            <p class="journey__card-sub">SEGi University</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__card-details">
+                        <div class="journey__card-range">
+                            <span class="material-icons">date_range</span>
+                            <p>Sep 2023 - Aug 2025</p>
+                        </div>
+
+                        <div class="journey__divider"></div>
+
+                        <div class="journey__card-location">
+                            <span class="material-icons">location_on</span>
+                            <p>Petaling Jaya, Selangor</p>
+                        </div>
+                    </div>
+
+                    <ul class="tags">
+                        <li class="tag">Java</li>
+                        <li class="tag">Android Studio</li>
+                        <li class="tag">Flutter</li>
+                        <li class="tag">C#</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">Pandas</li>
+                        <li class="tag">SQL</li>
+                    </ul>
+                </div>
+
+                <div class="journey__card">
+                    <div class="journey__card-header">
+                        <img src="assets/images/simplicitic.jpg" alt="simplicitic" draggable="false" class="journey__card-icon" />
+                        <div class="journey__card-info">
+                            <h3 class="journey__card-title">Web & Software Developer Intern</h3>
+                            <p class="journey__card-sub">Simplicitic Innovations Sdn Bhd</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__card-details">
+                        <div class="journey__card-range">
+                            <span class="material-icons">date_range</span>
+                            <p>Jul 2023 - Sep 2023</p>
+                        </div>
+
+                        <div class="journey__divider"></div>
+
+                        <div class="journey__card-location">
+                            <span class="material-icons">location_on</span>
+                            <p>Subang Jaya, Selangor</p>
+                        </div>
+                    </div>
+
+                    <ul class="tags">
+                        <li class="tag">React.js</li>
+                        <li class="tag">JavaScript</li>
+                        <li class="tag">TypeScript</li>
+                        <li class="tag">Redux.js</li>
+                        <li class="tag">MongoDB</li>
+                        <li class="tag">Sourcetree</li>
+                        <li class="tag">SASS</li>
+                    </ul>
+                </div>
+
+                <div class="journey__card">
+                    <div class="journey__card-header">
+                        <img src="assets/images/scsj.png" alt="segi" draggable="false" class="journey__card-icon" />
+                        <div class="journey__card-info">
+                            <h3 class="journey__card-title">Diploma in Information Technology</h3>
+                            <p class="journey__card-sub">SEGi College Subang Jaya</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__card-details">
+                        <div class="journey__card-range">
+                            <span class="material-icons">date_range</span>
+                            <p>Jan 2021 - Aug 2023</p>
+                        </div>
+
+                        <div class="journey__divider"></div>
+
+                        <div class="journey__card-location">
+                            <span class="material-icons">location_on</span>
+                            <p>Subang Jaya, Selangor</p>
+                        </div>
+                    </div>
+
+                    <ul class="tags">
+                        <li class="tag">SQL</li>
+                        <li class="tag">C++</li>
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">JavaScript</li>
+                        <li class="tag">Java</li>
+                        <li class="tag">Android Studio</li>
+                        <li class="tag">UX</li>
+                        <li class="tag">C#</li>
+                        <li class="tag">.NET</li>
+                        <li class="tag">Python</li>
+                    </ul>
+                </div>
+
+                <div class="journey__card">
+                    <div class="journey__card-header">
+                        <img src="assets/images/scsj.png" alt="segi" draggable="false" class="journey__card-icon" />
+                        <div class="journey__card-info">
+                            <h3 class="journey__card-title">Certificate in Information Technology</h3>
+                            <p class="journey__card-sub">SEGi College Subang Jaya</p>
+                        </div>
+                    </div>
+
+                    <div class="journey__card-details">
+                        <div class="journey__card-range">
+                            <span class="material-icons">date_range</span>
+                            <p>May 2019 - Dec 2020</p>
+                        </div>
+
+                        <div class="journey__divider"></div>
+
+                        <div class="journey__card-location">
+                            <span class="material-icons">location_on</span>
+                            <p>Subang Jaya, Selangor</p>
+                        </div>
+                    </div>
+
+                    <ul class="tags">
+                        <li class="tag">C++</li>
+                        <li class="tag">Java</li>
+                        <li class="tag">Adobe Flash</li>
+                        <li class="tag">Basic Network</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -234,13 +249,14 @@
 
             <div class="projects__list">
                 <div class="projects__project">
-                    <img src="assets/images/cleaning-service-app.png" alt="cleaning-service-app" draggable="false" class="projects__image" />
-                    
-                    <div class="projects__content">
+                    <div class="projects__left">
+                        <img src="assets/images/cleaning-service-app.png" alt="cleaning-service-app" draggable="false" class="projects__img" />
+                    </div>
+                    <div class="projects__right">
                         <span class="projects__category">Academic Projects</span>
                         <h3 class="projects__title">Cleaning Service App</h3>
                         <p class="projects__desc">A mobile app development as part of my final year project, enabling customers to book cleaning services, with features such as nearby cleaner discovery and real-time chat.</p>
-                        
+
                         <ul class="tags">
                             <li class="tag">React Native</li>
                             <li class="tag">Node.js</li>
@@ -254,13 +270,14 @@
                 </div>
 
                 <div class="projects__project project--reverse">
-                    <img src="assets/images/my-portfolio.png" alt="cleaning-service-app" draggable="false" class="projects__image" />
-                    
-                    <div class="projects__content">
+                    <div class="projects__left">
+                        <img src="assets/images/my-portfolio.png" alt="cleaning-service-app" draggable="false" class="projects__img" />
+                    </div>
+                    <div class="projects__right">
                         <span class="projects__category">Side Projects</span>
                         <h3 class="projects__title">My Portfolio</h3>
                         <p class="projects__desc">A personal portfolio website showcasing my journey, projects, and skills as a software engineer.</p>
-                        
+
                         <ul class="tags">
                             <li class="tag">HTML</li>
                             <li class="tag">CSS</li>
@@ -366,29 +383,29 @@
                 <form class="contact__form">
                     <div class="contact__form-group">
                         <label for="name" class="contact__form-label">Your Name</label>
-                        <input type="text" id="name" class="contact__form-input" placeholder="Your Name">
+                        <input type="text" id="name" class="input contact__form-input" placeholder="Your Name">
                     </div>
 
                     <div class="contact__form-group">
                         <label for="email" class="contact__form-label">Your Email</label>
-                        <input type="email" id="email" class="contact__form-input" placeholder="Your Email">
+                        <input type="email" id="email" class="input contact__form-input" placeholder="Your Email">
                     </div>
 
                     <div class="contact__form-group">
                         <label for="subject" class="contact__form-label">Subject</label>
-                        <input type="text" id="subject" class="contact__form-input" placeholder="Subject">
+                        <input type="text" id="subject" class="input contact__form-input" placeholder="Subject">
                     </div>
 
                     <div class="contact__form-group">
                         <label for="message" class="contact__form-label">Message</label>
-                        <textarea name="message" id="message" class="contact__form-textarea" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" class="input contact__form-textarea" placeholder="Message"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary contact__form-submit">Send Message</button>
                 </form>
             </div>
         </section>
-    </main>
+     </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
