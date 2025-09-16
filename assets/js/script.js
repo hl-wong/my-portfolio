@@ -1,3 +1,14 @@
+
+/**
+ * Navigation Bar
+ */
+const nav = document.querySelector('.nav');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) { nav.classList.add('scrolled'); }
+    else { nav.classList.remove('scrolled'); }
+});
+
 /**
  * Mobile Menu
  */
@@ -20,4 +31,4 @@ links.forEach(link => {
 window.addEventListener('resize', () => {
     toggle.classList.remove('toggle--active');
     menu.classList.remove('active');
-})
+});
