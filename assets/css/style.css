@@ -593,7 +593,7 @@ body {
 
     .journey__timeline::before { left: 50%; }
 
-    .journey__current { left: 50%; }
+    .journey__present { left: 50%; }
 
     .journey__card { 
         margin-left: unset;
