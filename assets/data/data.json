@@ -1,0 +1,103 @@
+{
+    "work": [
+        {
+            "image": "assets/images/simplicitic.jpg",
+            "title": "Web & Software Developer Intern",
+            "sub": "Simplicitic Innovations Sdn Bhd",
+            "start": "2023-07-01",
+            "end": "2023-09-30",
+            "location": "Subang Jaya, Selangor",
+            "tags": ["React.js", "JavaScript", "TypeScript", "Redux.js", "MongoDB", "Sourcetree", "SASS"]
+        },
+        {
+            "image": "assets/images/cardbiz.jpg",
+            "title": "Intern Trainee, Terminal Program Developer",
+            "sub": "CardBiz Payment Services Sdn Bhd",
+            "start": "2025-06-01",
+            "end": "2025-08-31",
+            "location": "Petaling Jaya, Selangor",
+            "tags": ["Java", "Android Studio", "ISO 8583", "Tortoise SVN", "Notepad++"]
+        }
+    ],
+    "academic": [
+        {
+            "image": "assets/images/scsj.png",
+            "title": "Certificate in Information Technology",
+            "sub": "SEGi College Subang Jaya",
+            "start": "2019-05-01",
+            "end": "2020-12-31",
+            "location": "Subang Jaya, Selangor",
+            "tags": ["C++", "Java", "Adobe Flash", "Basic Network"]
+        },
+        {
+            "image": "assets/images/scsj.png",
+            "title": "Diploma in Information Technology",
+            "sub": "SEGi College Subang Jaya",
+            "start": "2021-01-01",
+            "end": "2023-08-31",
+            "location": "Subang Jaya, Selangor",
+            "tags": ["C++", "HTML", "CSS", "SQL", "PHP", "JavaScript", "Java", "Android Studio", "UX", "C#", ".NET", "Python"]
+        },
+        {
+            "image": "assets/images/segi-university.png",
+            "title": "Bachelor of Information Technology (Hons) in Software Engineering",
+            "sub": "SEGi University",
+            "start": "2023-09-01",
+            "end": "2025-08-31",
+            "location": "Petaling Jaya, Selangor",
+            "tags": ["Java", "Android Studio", "Flutter", "C#", "Python", "Pandas", "SQL", "UI/UX"]
+        }
+    ],
+    "projects": [
+        {
+            "image": "assets/images/cleaning-service-app.png",
+            "title": "Cleaning Service App",
+            "category": "Academic Projects",
+            "desc": "A mobile app development as part of my final year project, enabling customers to book cleaning services, with features such as nearby cleaners discovery and real-time chat.",
+            "tags": ["React Native", "Node.js", "MongoDB", "JavaScript", "TypeScript", "Socket.io"],
+            "link": "https://github.com/hl-wong/cleanzee-fyp"
+        },
+        {
+            "image": "assets/images/my-portfolio.png",
+            "title": "My Portfolio",
+            "category": "Side Projects",
+            "desc": "A personal portfolio website showcasing my journey, projects and skills as a software engineer.",
+            "tags": ["HTML", "CSS", "JavaScript"],
+            "link": "https://github.com/hl-wong/my-portfolio"
+        }
+    ],
+    "skills": [
+        {
+            "image": "./assets/images/html-5.png",
+            "label": "HTML5"
+        },
+        {
+            "image": "./assets/images/css-3.png",
+            "label": "CSS3"
+        },
+        {
+            "image": "./assets/images/javascript.png",
+            "label": "JavaScript"
+        },
+        {
+            "image": "./assets/images/java.png",
+            "label": "Java"
+        },
+        {
+            "image": "./assets/images/react.png",
+            "label": "React"
+        },
+        {
+            "image": "./assets/images/vscode.png",
+            "label": "VS Code"
+        },
+        {
+            "image": "./assets/images/github.png",
+            "label": "Git & GitHub"
+        },
+        {
+            "image": "./assets/images/android-studio.png",
+            "label": "Android Studio"
+        }
+    ]
+}
