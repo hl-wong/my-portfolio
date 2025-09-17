@@ -139,6 +139,14 @@ function resetToTop() {
 window.addEventListener('load', resetToTop);
 
 /**
+ * Fix Safari load and jump issue
+ */
+window.addEventListener('pageshow', function(e) {
+    if (e.persisted) resetToTop();
+})
+if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+
+/**
  * Navigation Bar
  */
 const nav = document.querySelector('.nav');
