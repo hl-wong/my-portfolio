@@ -2,6 +2,8 @@
 
 html { scroll-behavior: smooth; }
 
+html, body { overflow-x: hidden; }
+
 :root {
     /* ===== COLORS ===== */
     --primary: #6466AD;
@@ -318,16 +320,9 @@ body {
     z-index: 1;
 }
 
-.journey__card {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 1rem;
-    margin-left: 3rem;
-    position: relative;
-    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
-}
+.journey__item { position: relative; }
 
-.journey__card::before {
+.journey__item::before {
     content: "";
     height: 16px;
     width: 16px;
@@ -335,9 +330,22 @@ body {
     background-color: var(--success);
     position: absolute;
     top: 16px;
-    left: -32px;
+    left: 16px;
     transform: translate(-50%, -50%);
 }
+
+.journey__card {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    margin-left: 3rem;
+    position: relative;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(0);
+}
+
+.journey__card.card--visible { animation: slideInRight 0.8s forwards; }
 
 .journey__card::after {
     content: "";
@@ -401,6 +409,17 @@ body {
 
 .journey__card-location > p { font-size: 0.75rem; }
 
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* ===== PROJECTS ===== */
 .projects__list { 
     margin-top: 2rem; 
@@ -408,6 +427,13 @@ body {
     flex-direction: column;
     gap: 4rem;
 }
+
+.projects__project {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.projects__project.project--visible { animation: slideInUp 0.8s forwards; }
 
 .projects__img {
     heght: auto;
@@ -440,6 +466,17 @@ body {
 }
 
 .projects__btn { margin-top: 2rem; }
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* ===== SKILLS ===== */
 .skills__grid {
@@ -666,28 +703,40 @@ body {
 
     .journey__present { left: 50%; }
 
-    .journey__card { 
-        margin-left: unset;
-        width: calc(50% - 40px);
-    }
+    .journey__item { width: calc(50% - 40px); }
 
-    .journey__card:nth-child(odd) { justify-self: flex-end; }
+    .journey__item:nth-child(odd) { justify-self: flex-end; }
 
-    .journey__card:nth-child(odd)::before { left: -40px; }
+    .journey__item:nth-child(odd)::before { left: -40px; }
 
-    .journey__card:nth-child(even) { justify-self: flex-start; }
+    .journey__item:nth-child(even) { justify-self: flex-start; }
 
-    .journey__card:nth-child(even)::before {
+    .journey__item:nth-child(even)::before {
         left: unset;
         right: -40px;
         transform: translate(50%, -50%);
     }
 
-    .journey__card:nth-child(even)::after {
+    .journey__card { margin-left: unset; }
+    
+    .journey__item:nth-child(even) > .journey__card::after {
         clip-path: polygon(0 0, 100% 50%, 0 100%);
         left: unset;
         right: -7px;
         transform: translateX(50%);
+    }
+
+    .journey__item:nth-child(even) > .journey__card.card--visible { animation: slideInLeft 0.8s ease-out forwards; }
+
+    @keyframes slideInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-500px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     /* ===== PROJECTS ===== */
@@ -708,6 +757,10 @@ body {
     .projects__right { margin-top: unset; }
 
     .project--reverse { flex-direction: row-reverse; }
+
+    .projects__project:nth-child(odd).project--visible { animation: slideInRight 0.8s forwards; }
+
+    .projects__project:nth-child(even).project--visible { animation: slideInLeft 0.8s forwards; }
 
     /* ===== SKILLS ===== */
     .skills__grid {
