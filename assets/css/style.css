@@ -105,6 +105,14 @@ body {
     box-sizing: border-box;
 }
 
+.error {
+    color: var(--error);
+    font-size: 0.75rem;
+    display: none;
+}
+
+.error--visible { display: block; }
+
 @keyframes fadeRise {
     from {
         opacity: 0;

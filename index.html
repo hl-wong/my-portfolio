@@ -60,7 +60,7 @@
                 <h2 class="section__title about__title">About Me</h2>
                 <p class="section__desc about__desc">I’m a recent Software Engineering graduate whose journey as a developer began with projects such as a cleaning service mobile app and my own portfolio. Through these, I gained practical experience in both front-end and back-end development, where I not only coded but also designed the user interface for my projects.</p>
                 <p class="section__desc about__desc">I will continue to learn new technologies, improve my skills, and apply them to real-world projects as I advance in my career.</p>
-                <a download target="_blank" class="btn btn-primary about__btn">View Resume</a>
+                <a href="https://drive.google.com/file/d/1GtBkwp6MpaTWxBZL39IfLcspI6Tw8w29/view?usp=sharing" target="_blank" class="btn btn-primary about__btn">View Resume</a>
             </div>
         </section>
 
@@ -133,25 +133,29 @@
             </div>
 
             <div class="contact__right">
-                <form class="contact__form">
+                <form class="contact__form" id="contact__form" method="POST" netlify>
                     <div class="contact__form-group">
                         <label for="name" class="contact__form-label">Your Name</label>
-                        <input type="text" id="name" class="input contact__form-input" placeholder="Your Name">
+                        <input type="text" id="contact__form-input-name" class="input contact__form-input" placeholder="Your Name" required>
+                        <span class="error" id="contact__form-error-name"></span>
                     </div>
 
                     <div class="contact__form-group">
                         <label for="email" class="contact__form-label">Your Email</label>
-                        <input type="email" id="email" class="input contact__form-input" placeholder="Your Email">
+                        <input type="email" id="contact__form-input-email" class="input contact__form-input" placeholder="Your Email" required>
+                        <span class="error" id="contact__form-error-email"></span>
                     </div>
 
                     <div class="contact__form-group">
                         <label for="subject" class="contact__form-label">Subject</label>
-                        <input type="text" id="subject" class="input contact__form-input" placeholder="Subject">
+                        <input type="text" id="contact__form-input-subject" class="input contact__form-input" placeholder="Subject" required>
+                        <span class="error" id="contact__form-error-subject"></span>
                     </div>
 
                     <div class="contact__form-group">
                         <label for="message" class="contact__form-label">Message</label>
-                        <textarea name="message" id="message" class="input contact__form-textarea" placeholder="Message"></textarea>
+                        <textarea name="message" id="contact__form-input-message" class="input contact__form-textarea" placeholder="Message" required></textarea>
+                        <span class="error" id="contact__form-error-message"></span>
                     </div>
 
                     <button type="submit" class="btn btn-primary contact__form-submit">Send Message</button>

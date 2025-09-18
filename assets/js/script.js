@@ -28,7 +28,7 @@ fetch('./assets/data/data.json')
         const skills = data.skills;
 
         /**
-         * `Journey`
+         * Journey
          */
         let journeys = [...work, ...academic];
 
@@ -79,7 +79,7 @@ fetch('./assets/data/data.json')
 
 
         /**
-         * `Projects`
+         * Projects
          */
         const projects_list = document.getElementById("projects__list");
         projects.forEach((project, index) => {
@@ -107,7 +107,7 @@ fetch('./assets/data/data.json')
         });
 
         /**
-         * `Skills`
+         * Skills
          */
         const skills_grid = document.getElementById("skills__grid");
         skills.forEach(skill => {
@@ -211,3 +211,62 @@ function revealOnScroll(selector, visibleClass, delayStep) {
     elements.forEach(el => observer.observe(el));
 }
 revealOnScroll('.section', 'section--visible', 2);
+
+/**
+ * Contact Form
+ */
+const contact_form = document.getElementById("contact__form");
+contact_form.addEventListener('submit', function(event) {
+    let formValid = true;
+
+    const name = document.getElementById("contact__form-input-name").value;
+    const error_name = document.getElementById("contact__form-error-name");
+
+    if (!name) {
+        formValid = false;
+        error_name.textContent = "Please enter your name.";
+        error_name.classList.add('error--visible');
+    } else { error_name.classList.remove('error--visible'); }
+
+    const email = document.getElementById("contact__form-input-email").value;
+    const error_email = document.getElementById("contact__form-error-email");
+
+    function validateEmail(email) {
+        var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return regex.test(email);
+    }
+
+    if (!email) {
+        formValid = false;
+        error_email.textContent = "Please enter your email";
+        error_email.classList.add('error--visible');
+    }
+    else if (!validateEmail(email)) {
+        formValid = false;
+        error_email.textContent = "Please enter your valid email";
+        error_email.classList.add('error--visible');
+    } else { error_email.classList.remove('error--visible'); }
+
+    const subject = document.getElementById("contact__form-input-subject").value;
+    const error_subject = document.getElementById("contact__form-error-subject");
+
+    if (!subject) {
+        formValid = false;
+        error_subject.textContent = "Please enter your subject";
+        error_subject.classList.add('error--visible');
+    } else { error_subject.classList.remove('error--visible'); }
+
+    const message = document.getElementById("contact__form-input-message").value;
+    const error_message = document.getElementById("contact__form-error-message");
+
+    if (!message) {
+        formValid = false;
+        error_message.textContent = "Please enter your message";
+        error_message.classList.add('error--visible');
+    }
+    else { error_message.classList.remove('error--visible'); }
+
+    if (!formValid) { event.preventDefault(); }
+})
+
+
