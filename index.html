@@ -3,13 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HL Wong</title>
+    <title>HL Wong | Software Engineer</title>
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ===== MATERIAL ICONS ===== -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- ===== FONTAWESOME ICONS ===== -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="nav">
+            <div class="nav__wrapper">
+                <a href="/"><img src="assets/images/logo-dark.png" alt="logo" draggable="false" class="nav__logo"></a>
+                <div class="nav__divider"></div>
+                <ul class="nav__list" id="nav__list"></ul>
+            </div>
+            <button class="nav__toggle">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+        </nav>
+
+        <div class="header__menu">
+            <ul class="header__list" id="header__list"></ul>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+     <main>
+        <!-- ===== HERO ===== -->
+        <section id="hero" class="hero">
+            <div>
+                <span class="hero__greeting">Hello,</span>
+                <h1 class="hero__main">I'm <span class="text-highlight">HL Wong</span></h1>
+                <h2 class="hero__sub"><span id="hero__role"></span></h2>
+            </div>
+
+            <p class="hero__desc">The beginning of my journey as a <span class="text-highlight">Developer</span> — always learning, always growing.</p>
+
+            <a href="#projects" class="btn btn-primary hero__btn">View Projects <span class="material-icons">arrow_forward</span></a>
+        </section>
+
+        <!-- ===== ABOUT ME ===== -->
+        <section id="about-me" class="section about">
+            <div class="about__left">
+                <img src="assets/images/about.png" alt="about" draggable="false" loading="lazy" class="about__img">
+            </div>
+            <div class="about__right">
+                <h2 class="section__title about__title">About Me</h2>
+                <p class="section__desc about__desc">I’m a recent Software Engineering graduate whose journey as a developer began with projects such as a cleaning service mobile app and my own portfolio. Through these, I gained practical experience in both front-end and back-end development, where I not only coded but also designed the user interface for my projects.</p>
+                <p class="section__desc about__desc">I will continue to learn new technologies, improve my skills, and apply them to real-world projects as I advance in my career.</p>
+                <a href="https://drive.google.com/file/d/1GtBkwp6MpaTWxBZL39IfLcspI6Tw8w29/view?usp=sharing" target="_blank" class="btn btn-primary about__btn">View Resume</a>
+            </div>
+        </section>
+
+        <!-- ===== JOURNEY ===== -->
+        <section id="my-journey" class="section">
+            <div>
+                <h2 class="section__title">My Journey</h2>
+                <p class="section__desc">Academic and Work Experience</p>
+            </div>
+
+            <div class="journey__timeline" id="journey__timeline">
+                <span class="material-icons journey__present">location_on</span>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects" class="section">
+            <h2 class="section__title">Latest Projects</h2>
+
+            <div class="projects__list" id="projects__list"></div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="section">
+            <div>
+                <h2 class="section__title">Skills</h2>
+                <p class="section__desc">Technologies I've worked with and continue to grow in.</p>
+            </div>
+
+            <div class="skills__grid" id="skills__grid"></div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section contact">
+            <div class="contact__left">
+                <div>
+                    <h2 class="section__title contact__title">Contact Me</h2>
+                    <p class="section__desc contact__desc">Got a question or simply want to connect? Drop me a message anytime.</p>
+                </div>
+                
+                <ul class="contact__social-list">
+                    <li class="contact__social-item">
+                        <div class="contact__social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="contact__social-text">Email</p>
+                            <a href="mailto:hlwongwf@gmail.com" target="_blank" class="contact__social-link">hlwongwf@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact__social-item">
+                        <div class="contact__social-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <p class="contact__social-text">GitHub</p>
+                            <a href="https://github.com/hl-wong" target="_blank" class="contact__social-link">https://github.com/hl-wong</a>
+                        </div>
+                    </li>
+                    <li class="contact__social-item">
+                        <div class="contact__social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <p class="contact__social-text">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/hl-wong/" target="_blank" class="contact__social-link">https://www.linkedin.com/in/hl-wong/</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact__right">
+                <form class="contact__form" id="contact__form" method="POST" netlify>
+                    <div class="contact__form-group">
+                        <label for="name" class="contact__form-label">Your Name</label>
+                        <input type="text" name="name" id="contact__form-input-name" class="input contact__form-input" placeholder="Your Name" required>
+                        <span class="error" id="contact__form-error-name"></span>
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="email" class="contact__form-label">Your Email</label>
+                        <input type="email" name="email" id="contact__form-input-email" class="input contact__form-input" placeholder="Your Email" required>
+                        <span class="error" id="contact__form-error-email"></span>
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="subject" class="contact__form-label">Subject</label>
+                        <input type="text" name="subject" id="contact__form-input-subject" class="input contact__form-input" placeholder="Subject" required>
+                        <span class="error" id="contact__form-error-subject"></span>
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="message" class="contact__form-label">Message</label>
+                        <textarea name="message" id="contact__form-input-message" class="input contact__form-textarea" placeholder="Message" required></textarea>
+                        <span class="error" id="contact__form-error-message"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact__form-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+     </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p class="footer__copyright">© 2025 HL Wong. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== Typed.js ===== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- ===== JAVASCRIPT ===== -->
-     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
