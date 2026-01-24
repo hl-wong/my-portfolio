@@ -24,6 +24,7 @@ body {
   --clr-transparent: transparent;
   --clr-tag: #f3f4f6;
   --clr-border: #e5e7eb;
+  --clr-copyright: #888888;
   --font-poppins: "Poppins", sans-serif;
   --wgt-regular: 400;
   --wgt-medium: 500;
@@ -715,6 +716,13 @@ body {
   height: 4px;
   background-color: var(--clr-primary);
   transition: width 0.3s ease;
+}
+
+.footer {
+  color: var(--clr-copyright);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
