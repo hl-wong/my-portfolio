@@ -1,0 +1,199 @@
+{
+  "academic": [
+    {
+      "course": "Certificate in Information Technology",
+      "school": "SEGi College Subang Jaya",
+      "location": "Subang Jaya, Selangor",
+      "logo": "assets/images/segi-college.png",
+      "start": "2019-05-01",
+      "end": "2020-12-31"
+    },
+    {
+      "course": "Diploma in Information Technology",
+      "school": "SEGi College Subang Jaya",
+      "location": "Subang Jaya, Selangor",
+      "logo": "assets/images/segi-college.png",
+      "start": "2021-01-01",
+      "end": "2023-08-31"
+    },
+    {
+      "course": "Bachelor of Information Technology (Hons) in Software Engineering",
+      "school": "SEGi University",
+      "location": "Petaling Jaya, Selangor",
+      "logo": "assets/images/segi-university.png",
+      "start": "2023-09-01",
+      "end": "2025-08-31"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Web & Software Developer Intern",
+      "company": "Simplicitic Innovations Sdn Bhd",
+      "location": "Shah Alam, Selangor",
+      "logo": "assets/images/simplicitic.jpg",
+      "start": "2023-07-01",
+      "end": "2023-09-30",
+      "responsibilities": [
+        "Developed front-end features using React and TypeScript based on provided UI/UX designs, ensuring accurate and responsive implementation.",
+        "Built a mobile-optimized QR code web application in React that enables users to scan QR codes to access the specific industry profile and book appointments.",
+        "Managed web application state using Redux by creating actions and slices to handle the API data.",
+        "Built and managed forms using Formik with Yup validation to ensure accurate and user-friendly data submission.",
+        "Write clean, maintainable, and type-safe code with TypeScript."
+      ],
+      "skills": [
+        "Web Development",
+        "Front-End Development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Redux",
+        "SASS",
+        "MongoDB",
+        "Formik",
+        "Yup"
+      ]
+    },
+    {
+      "position": "Intern Trainee, Terminal Program Developer",
+      "company": "CardBiz Payment Services Sdn Bhd",
+      "location": "Petaling Jaya, Selangor",
+      "logo": "assets/images/cardbiz.jpg",
+      "start": "2025-06-01",
+      "end": "2025-08-31",
+      "responsibilities": [
+        "Developed an ISO 8583 message parser tool in Java to decode, validate, and troubleshoot financial transaction data.",
+        "Fixed application bugs and contributed to Android terminal application development using Java and Android Studio.",
+        "Implemented multilingual support by managing Malay translations for application UI strings.",
+        "Created detailed SIT and UAT test cases based on project requirements and executed structured test cycles.",
+        "Identified, reported, and verified defects across Android payment applications and POS terminal environments.",
+        "Conducted functional, integration, regression testing using POS terminals and BTT tools for transaction simulation.",
+        "Gained hands-on experience with fintech technologies including ISO 8583, EMV, ECR communication, and payment transaction workflows."
+      ],
+      "skills": [
+        "Application Development",
+        "Java",
+        "Android",
+        "Banking Systems",
+        "ISO8583",
+        "EMV",
+        "ECR",
+        "POS Terminal Integration",
+        "QA Testing",
+        "SIT",
+        "UAT",
+        "Test Case Design",
+        "Bug Verification"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML5",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    },
+    {
+      "name": "CSS3",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "React",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    },
+    {
+      "name": "Node.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+    },
+    {
+      "name": "Express.js",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      "name": "Java",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+    },
+    {
+      "name": "React Native",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg"
+    },
+    {
+      "name": "Android (Java)",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Cleanzee – Cleaning Service App",
+      "category": "Academic Projects",
+      "description": "A mobile app development as part of my final year project, allow customers to book cleaning services, with features such as nearby cleaners and real-time chat.",
+      "image": "assets/images/cleaning-service-app.png",
+      "skills": [
+        {
+          "name": "React Native",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "Express.js",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+        },
+        {
+          "name": "Socket.io",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg"
+        }
+      ],
+      "github": "https://github.com/hl-wong/cleanzee-fyp",
+      "demo": null
+    },
+    {
+      "title": "My Portfolio",
+      "category": "Side Projects",
+      "description": "A personal portfolio website featuring my journey, projects, and skills as a software engineer.",
+      "image": "assets/images/my-portfolio.png",
+      "skills": [
+        {
+          "name": "HTML5",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS3",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "Netlify",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+        },
+        {
+          "name": "Figma",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+        }
+      ],
+      "github": "https://github.com/hl-wong/my-portfolio",
+      "demo": "https://hl-wong.netlify.app/"
+    }
+  ]
+}
